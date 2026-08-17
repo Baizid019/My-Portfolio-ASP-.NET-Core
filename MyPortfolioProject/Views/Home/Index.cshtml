@@ -534,6 +534,123 @@
             background-color: #f8f6ff;
             transform: scale(1.01);
         }
+
+    /* --- RESPONSIVE ADJUSTMENTS FOR TABLET & MOBILE --- */
+    @@media (max-width: 768px) {
+        .container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .display-3 {
+            font-size: 2rem;
+            line-height: 1.15;
+        }
+
+        .lead.fs-4 {
+            font-size: 1rem;
+        }
+
+        .portfolio-card {
+            padding: 1.25rem !important;
+            border-radius: 14px;
+        }
+
+        .developer-terminal-window {
+            width: 260px !important;
+            margin: 20px auto;
+        }
+
+        .terminal-top-bar {
+            padding: 8px 10px;
+        }
+
+        .terminal-profile-img {
+            max-height: 260px;
+            object-fit: cover;
+        }
+
+        .tech-logo-box {
+            height: 80px;
+        }
+
+        .floating-contact-stack {
+            left: 12px;
+            bottom: 18px;
+        }
+
+        .contact-floating-btn {
+            width: 48px;
+            height: 48px;
+            font-size: 1.3rem;
+        }
+
+        .global-floating-code {
+            display: none !important;
+        }
+
+        /* Override inline widths on horizontal galleries/cards */
+        #featuredGallery .flex-shrink-0,
+        #projectSlider .flex-shrink-0,
+        #certificationsSlider .item-card-wrapper {
+            min-width: 220px !important;
+            width: 75% !important;
+        }
+
+        .badge-custom,
+        .skill-pill {
+            padding: 6px 10px;
+            font-size: 0.85rem;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+        }
+
+        .btn-download-custom {
+            padding: 10px 14px;
+            font-size: 0.9rem;
+        }
+    }
+
+    @@media (max-width: 480px) {
+        .display-3 {
+            font-size: 1.6rem;
+        }
+
+        .lead {
+            font-size: 0.95rem;
+        }
+
+        .developer-terminal-window {
+            width: 220px !important;
+        }
+
+        .terminal-profile-img {
+            max-height: 200px;
+        }
+
+        .portfolio-card {
+            padding: 1rem !important;
+        }
+
+        #featuredGallery .flex-shrink-0,
+        #projectSlider .flex-shrink-0,
+        #certificationsSlider .item-card-wrapper {
+            min-width: 200px !important;
+            width: 90% !important;
+        }
+
+        .timeline-item {
+            padding-left: 12px;
+        }
+
+        /* Hide floating contact stack on small screens to free space */
+        .floating-contact-stack {
+            display: none !important;
+        }
+    }
+
 </style>
 
 
